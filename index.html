@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>beshifier</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="card bg-neutral-100 text-align-center br-2">
+      <img class="card__image" src="/images/illustration-hero.svg" alt="" />
+      <div class="card__content padding-48 grid-flow">
+        <h2>🤸 Beshifier 🤸</h2>
+        <div id="beshify_output_feild">
+          beshify your text by typing in the input feild.
+        </div>
+        <div class="flex-row bg-neutral-200 text-align-left br-1 padding-24">
+          <input class="input" id="input_feild" name="" value="" />
+        </div>
+        <button
+          onclick="getInputText()"
+          class="button"
+          id="beshify"
+          data-type="primary"
+        >
+          Beshify Text
+        </button>
+        <button onclick="copyToClipboard()" class="button" data-type="naked">
+          Copy Text
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
